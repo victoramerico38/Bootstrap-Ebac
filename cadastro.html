@@ -7,7 +7,7 @@
         <!-- CSS only -->
         <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./style/custom.css">
-        <title>Document</title>
+        <title>Cadastro</title>
     </head>
     <body>
 
@@ -20,7 +20,7 @@
                   <nav class="nav" id="navlinks">
                     <ul class="nav justify-content">
                         <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                          <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#">Sobre</a>
@@ -37,75 +37,31 @@
               </nav>
         </header>
 
-        <section id="sobre">
-        <div class="container container-fluid">
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h1>Sobre Nós</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus atque deserunt. Dolorem delectus temporibus eos voluptatem doloremque commodi modi obcaecati ipsa maxime dolores quia illo nemo tenetur, alias quos.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam similique quasi sit odio. Distinctio perferendis quo sed tempore odio excepturi magnam voluptates quod est, reprehenderit mollitia dolores inventore quas?</p>
-                    
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./img/img1-500x330.jpg" alt="img1" class="img-fluid">
-                </div>
-            </div>
-        </div>
-        </section>
-        <section id="produtos">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-
-                        <h2>Cursos</h2>
-                        <div class="card">
-                            <img src="./img/1200x630ps.png" height="200px" alt="PS" class="img-fuid">
-                            <div class="card-body">
-                                <h5 class="card-title">Photoshop</h5>
-                                <p class="card-text">
-                                    Adobe Photoshop é um software caracterizado como editor de imagens bidimensionais do tipo raster desenvolvido pela Adobe Systems. É considerado o líder no mercado dos editores de imagem profissionais.</p>
-                                    <a  class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./img/JavaScript-1024x640-landscape.png"  height="200px" alt="JS" class="img-fuid">
-                            <div class="card-body">
-                                <h5 class="card-title">JavaScript</h5>
-                                <p class="card-text">
-                                    JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
-                                    <a href="#produto-2" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="./img/Premiere-Pro-Learn.jpg" alt="PL" class="img-fuid">
-                            <div class="card-body">
-                                <h5 class="card-title">Premiere</h5>
-                                <p class="card-text">
-                                    Adobe Premiere Pro é um programa de computador, da empresa Adobe Systems, que é empregado para a edição de vídeos profissionais</p>
-                                    <a href="#produto-3" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="contato">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <h2>Contato</h2>
-                        <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação</p>
+                    <div class="col-md-12 col-sm-12">
+                        <h2>Cadastro</h2>
+                        <p>Faça seu cadastro para receber seus produtos em casa</p>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-12 col-sm-12">
                         <form class="form">
-                            <div class="input-group">
-                                <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+
+                            <div class="form-row">
+                               <div class="col">
+                                    <div class="input-group">
+                                         <input class="form-control" type="text" name="nome" placeholder="Digite seu nome">
+                                     </div>
+                               </div>
+                               <div class="col">
+                                     <div class="input-group">
+                                         <input class="form-control" type="email" name="email" placeholder="Digite seu email">
+                                    </div>
+                               </div>     
                             </div>
-                            <div class="input-group">
-                                <input class="form-control" type="email" name="email" placeholder="Digite seu email">
-                            </div>
+
+                            
+                           
                             <div class="input-group">
                                 <textarea class="form-control" name="" id=""  rows="5"></textarea>
                             </div>
