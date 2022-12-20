@@ -12,23 +12,29 @@
     <body>
 
         <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-
-                        <h1>Logo</h1>
-                        
-                    </div>
-                    <div class="col">
-                        <ul class="nav justify-content-end">
-                            <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Produtos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="">Contato</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <nav class="navbar">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="./Imagens/victormedialogo219x55.png" alt="victormedialogo219x55" widht="30" height="24">
+                  </a>
+                  <nav class="nav" id="navlinks">
+                    <ul class="nav justify-content">
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./cadastro.html">Contato</a>
+                        </li>
+                      </ul>
+                </nav>
+                </div>  
+              </nav>
         </header>
 
         <section id="sobre">
@@ -38,10 +44,10 @@
                     <h1>Sobre Nós</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatibus atque deserunt. Dolorem delectus temporibus eos voluptatem doloremque commodi modi obcaecati ipsa maxime dolores quia illo nemo tenetur, alias quos.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda numquam similique quasi sit odio. Distinctio perferendis quo sed tempore odio excepturi magnam voluptates quod est, reprehenderit mollitia dolores inventore quas?</p>
-                    <a class="btn btn-lg btn-success">Botão 1</a>
+                    
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <img src="https://picsum.photos/450/300" alt="img1" class="img-fluid">
+                    <img src="./Imagens/img1-500x330.jpg" alt="img1" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -51,34 +57,32 @@
                 <div class="row">
                     <div class="col">
 
-                        <h2>Produtos</h2>
+                        <h2>Cursos</h2>
                         <div class="card">
-                            <img src="https://picsum.photos/600/300" alt="" class="img-fuid">
+                            <img src="./Imagens/1200x630ps.png" height="200px" alt="PS" class="img-fuid">
                             <div class="card-body">
-                                <h5 class="card-title"></h5>
+                                <h5 class="card-title">Photoshop</h5>
                                 <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus repellendus aliquam architecto perferendis minima voluptates sed, labore illo reiciendis, consequatur itaque vel tempora doloribus ad sint sit! Nam, neque </p>
+                                    Adobe Photoshop é um software caracterizado como editor de imagens bidimensionais do tipo raster desenvolvido pela Adobe Systems. É considerado o líder no mercado dos editores de imagem profissionais.</p>
                                     <a  class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
                             </div>
                         </div>
-
                         <div class="card">
-                            <img src="https://picsum.photos/600/300" alt="" class="img-fuid">
+                            <img src="./Imagens/JavaScript-1024x640-landscape.png"  height="200px" alt="JS" class="img-fuid">
                             <div class="card-body">
-                                <h5 class="card-title"></h5>
+                                <h5 class="card-title">JavaScript</h5>
                                 <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus repellendus aliquam architecto perferendis minima voluptates sed, labore illo reiciendis, consequatur itaque vel tempora doloribus ad sint sit! Nam, neque </p>
-                                    <a href="#produto-2" class="btn btn-success">Ver produto</a>
+                                    JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
+                                    <a href="#produto-2" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
                             </div>
                         </div>
-
                         <div class="card">
-                            <img src="https://picsum.photos/600/300" alt="" class="img-fuid">
+                            <img src="./Imagens/Premiere-Pro-Learn.jpg" alt="PL" class="img-fuid">
                             <div class="card-body">
-                                <h5 class="card-title"></h5>
+                                <h5 class="card-title">Premiere</h5>
                                 <p class="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus repellendus aliquam architecto perferendis minima voluptates sed, labore illo reiciendis, consequatur itaque vel tempora doloribus ad sint sit! Nam, neque </p>
-                                    <a href="#produto-3" class="btn btn-success">Ver produto</a>
+                                    Adobe Premiere Pro é um programa de computador, da empresa Adobe Systems, que é empregado para a edição de vídeos profissionais</p>
+                                    <a href="#produto-3" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
                             </div>
                         </div>
 
@@ -112,42 +116,122 @@
             </div>
         </section>
 
-        <div class="container">
-            <div class="modal fade" id="modal-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Produto 1</h5>
-                            <button class="btn-close" data-bs-dimiss="modal" aria-label="close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h6>Confira o tamanho e os preços</h6>
-                            <table class="table table-hover">
-                                <tr>
-                                    <th>Tamanho</th>
-                                    <th>Valor</th>
-                                </tr>
-                                <tr>
-                                    <td>P</td>
-                                    <td>R$ 100</td>
-                                </tr>
-                                <tr>
-                                    <td>M</td>
-                                    <td>R$ 200</td>
-                                </tr>
-                                <tr>
-                                    <td>G</td>
-                                    <td>R$ 300</td>
-                                </tr>
-                            </table>
-                            <div class="modal-footer">
-                                <button class=" btn btn-secundary" data-bs-dimiss="modal">Fechar</button>
-                            </div>
-                        </div>
-                    </div>
+        <div class="modal" id="modal-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Produto 2</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body">
+                  <h6>Confira o tamanho e os preços</h6>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Tamanho</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1 mês</td>
+                                    <td>R$ 50</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Meses</td>
+                                    <td>R$ 250</td>
+                                </tr>
+                                <tr>
+                                    <td>1 ano</td>
+                                    <td>R$ 360</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
+        
+
+        <div class="modal" id="modal-2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Produto 2</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Confira o tamanho e os preços</h6>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Tamanho</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1 mês</td>
+                                    <td>R$ 60</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Meses</td>
+                                    <td>R$ 340</td>
+                                </tr>
+                                <tr>
+                                    <td>1 ano</td>
+                                    <td>R$ 680</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="modal-3">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Produto 2</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Confira o tamanho e os preços</h6>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Tamanho</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1 mês</td>
+                                    <td>R$ 50</td>
+                                </tr>
+                                <tr>
+                                    <td>6 Meses</td>
+                                    <td>R$ 250</td>
+                                </tr>
+                                <tr>
+                                    <td>1 ano</td>
+                                    <td>R$ 360</td>
+                                </tbody>
+                            </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn3">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         
         
     <!-- JavaScript Bundle with Popper -->
